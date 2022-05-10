@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+
+:root {
+	--background: #040416;
+	--button-border-color: #00ffaa;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: 'Nunito', Helvetica, Arial, sans-serif;
+	font-size: 1.25rem;
+	display: flex;
+    color:white;
+    text-align: center;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: var(--background);
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+input, button {
+	font: inherit;
+}
+
+button {
+	transition: all ease 0.3s;
+	appearance: none;
+	cursor: pointer;
+	border: 2px solid var(--button-border-color);
+	background: var(--background);
+	color: white;
+	padding: 0.5em 1em;
+	border-radius: 0.35em;
+	font-size: 1.5em;
+	line-height: 1.2;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	position: relative;
+    animation: borderColorAnimation 3s infinite alternate linear;
+}
+
+button::after {
+	display: block;
+	transition: all ease 0.3s;
+	position: absolute;
+	background: var(--background);
+	content: "+";
+	text-align: center;
+	width: 1.0em;
+	height: 1.0em;
+	border-radius: 1.0em;
+	font-size: 1.5em;
+	line-height: 1.0em;
+	font-weight: 400;
+	top: -0.5em;
+	right: -0.5em;
+	transform: translate(2px, -2px);
+}
+
+button:hover, button:focus {
+	animation-play-state: paused;
+	border-color: white;
+	color: var(--button-border-color);
+}
+
+button:hover::after, button:focus::after {
+	color: var(--button-border-color);
+}
+
+button:active {
+	animation-play-state: paused;
+	transform: translate(0px, -4px);
+	background: var(--button-border-color);
+	color: var(--background);
+	border-color: var(--button-border-color);
+}
+
+button:active::after {
+	color: var(--button-border-color);
+	background: var(--background);
+}
+
+@keyframes borderColorAnimation {
+	0% {
+		border-color: red;
+	}
+
+	25% {
+		border-color: orange;
+	}
+
+	50% {
+		border-color: yellow;
+	}
+
+	75% {
+		border-color: green;
+	}
+
+	100% {
+		border-color: blue;
+	}
+}
+
+button + button {
+	margin-top: 2rem;
+}
+
+
+
+
+#dessin{
+    margin-top:1em;
+    border:solid 1px black;
+    background-color: rgb(197, 194, 194);
+    -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+
+}
+
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+
+  
+
+  @keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+img{
+
+    width:200px;
+    
+}
+    
