@@ -1,8 +1,8 @@
 # Snake Game
 
-<img width="100" src="https://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/7ef729f71a523a2.png">
+<p align="center"><img width="200" src="https://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/7ef729f71a523a2.png"></p>
 
-https://chadow4.github.io/Snake-Game/
+Essayer en ligne : https://chadow4.github.io/Snake-Game/
 
 Le snake possède 3 niveaux de complexité différenciés de la manière suivante :
 
