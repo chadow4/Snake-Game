@@ -33,9 +33,6 @@ The snake has 3 levels of complexity differentiated as follows:
 It is possible to choose the level of your choice directly on the menu.
 
 
-
-- Faire tourner sous un serveur local/externe le jeu étant donné que nous utilisons JQuery pour le parsing des fichiers json.
-
 ### Developped with :
 
 * HTML
