@@ -13,7 +13,7 @@
   </p>
 </div>
 
-## Caractéristiques du jeu : 
+## About The Project : 
 
 The snake has 3 levels of complexity differentiated as follows:
 
